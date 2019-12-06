@@ -6,5 +6,10 @@ async function postUser(axios, form) {
   return axios.post("/user/", form )
 }
 
-module.exports.postUser = postUser;
+async function putUser(axios, form){
+  return axios.put("/user/", form)
+}
+
 module.exports.getUser = getUser;
+module.exports.postUser = postUser;
+module.exports.putUser = putUser;
